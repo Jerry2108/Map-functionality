@@ -1,0 +1,8 @@
+map1: map1.o tree.o 
+	gcc -g -o map1 map1.o -lm
+
+tree.o: tree.c tree.h 
+	gcc -g -c -Wall tree.c 
+
+map1.o: map1.c
+	gcc -g -c -Wall map1.c 
